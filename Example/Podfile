@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'FMDB_DYLB_Example' do
+  pod 'FMDB_DYLB', :path => '../'
+
+  target 'FMDB_DYLB_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
