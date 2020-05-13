@@ -1,0 +1,36 @@
+{
+  "name": "FlexLayout",
+  "version": "0.0.1",
+  "summary": "FlexLayout.",
+  "description": "this is FlexLayout",
+  "homepage": "http://git.missfresh.cn/mryt-ios-repo/flexlayout",
+  "license": {
+    "type": "MIT",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "GaoLin Shang": "shanggl@missfresh.cn"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "http://git.missfresh.cn/mryt-ios-repo/flexlayout.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "FlexLayout/FlexLayout/**/*.{swift,h,m,mm,cpp,c}",
+  "libraries": "c++",
+  "requires_arc": true,
+  "dependencies": {
+    "GMYogaKit": [
+      "~> 0.1.2"
+    ]
+  },
+  "compiler_flags": [
+    "-fno-omit-frame-pointer",
+    "-fexceptions",
+    "-Wall",
+    "-Werror",
+    "-fPIC"
+  ]
+}

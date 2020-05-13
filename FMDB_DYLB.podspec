@@ -21,22 +21,15 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/hfzdeyx@163.com/FMDB_DYLB'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/BoySimonHu/FMDB_DYLB'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hfzdeyx@163.com' => 'fangzheng@guanghe.tv' }
-  s.source           = { :git => 'https://github.com/hfzdeyx@163.com/FMDB_DYLB.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'hfzdeyx' => 'hfzdeyx@163.com' }
+  s.source           = { :http => 'http://q8874kee2.bkt.clouddn.com/FMDBSDK.framework.zip', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
+  s.default_subspec = 'zip'
 
-  s.source_files = 'FMDB_DYLB/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'FMDB_DYLB' => ['FMDB_DYLB/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'zip' do |ss|
+    ss.ios.vendored_frameworks = '*.framework'
+  end
 end

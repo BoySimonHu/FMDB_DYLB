@@ -1,0 +1,28 @@
+{
+  "name": "FMDB_DYLB",
+  "version": "0.1.0",
+  "summary": "A short description of FMDB_DYLB.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hfzdeyx@163.com/FMDB_DYLB",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hfzdeyx@163.com": "fangzheng@guanghe.tv"
+  },
+  "source": {
+    "http": "http://q8874kee2.bkt.clouddn.com/FMDBSDK.framework.zip",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "default_subspecs": "zip",
+  "subspecs": [
+    {
+      "name": "zip",
+      "vendored_frameworks": "*.framework"
+    }
+  ]
+}
